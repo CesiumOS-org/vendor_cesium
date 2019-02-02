@@ -46,7 +46,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ExactCalculator \
     DeskClock \
-    LatinIME
+    LatinIME \
+    OmniStyle
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
