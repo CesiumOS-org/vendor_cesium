@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= PixelExperience
+PRODUCT_BRAND ?= CesiumOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -137,8 +137,8 @@ include vendor/aosp/config/ota.mk
 # GApps
 include vendor/gapps/config.mk
 
-# Pixel Style
-include vendor/pixelstyle/config.mk
+# Cesium Style
+include vendor/cesiumstyle/config.mk
 
 # Customization
 include vendor/google/customization/config.mk

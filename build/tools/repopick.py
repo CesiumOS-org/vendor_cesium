@@ -151,15 +151,15 @@ def fetch_query(remote_url, query):
     elif remote_url[0:4] == 'http':
         return fetch_query_via_http(remote_url, query.replace(' ', '+'))
     else:
-        raise Exception('Gerrit URL should be in the form http[s]://hostname/ or ssh://[user@]host[:port]')
+        raise Exception('Github URL should be in the form http[s]://hostname/ or ssh://[user@]host[:port]')
 
 if __name__ == '__main__':
-    # Default to PixelExperience Gerrit
-    default_gerrit = 'https://gerrit.pixelexperience.org'
+    # Default to CesiumOS githubt
+    default_github = 'https://github.com/CesiumOS'
 
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=textwrap.dedent('''\
         repopick.py is a utility to simplify the process of cherry picking
-        patches from PixelExperience's Gerrit instance (or any gerrit instance of your choosing)
+        patches from CesiumOS Github instance (or any gerrit instance of your choosing)
 
         Given a list of change numbers, repopick will cd into the project path
         and cherry pick the latest patch available.
