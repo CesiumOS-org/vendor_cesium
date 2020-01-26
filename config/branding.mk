@@ -22,7 +22,6 @@ ROM_FINGERPRINT := CesiumOS/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$
 
 CUSTOM_PROPERTIES := \
     org.cesium.version=$(CUSTOM_VERSION_PROP) \
-    org.cesium.version.display=$(CUSTOM_VERSION) \
     org.cesium.build_date=$(CUSTOM_BUILD_DATE) \
     org.cesium.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
     org.cesium.build_type=$(CUSTOM_BUILD_TYPE) \
