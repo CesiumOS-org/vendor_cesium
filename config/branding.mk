@@ -18,12 +18,10 @@ TARGET_PRODUCT_SHORT := $(subst cesium_,,$(CUSTOM_BUILD))
 
 CESIUM_MOD_VERSION := CesiumOS-$(CESIUM_VERSION)-$(CUSTOM_BUILD)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
 CUSTOM_VERSION_PROP := 10
-ROM_FINGERPRINT := CesiumOS/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUSTOM_BUILD_DATE)
 
 CUSTOM_PROPERTIES := \
     org.cesium.version=$(CUSTOM_VERSION_PROP) \
     org.cesium.build_date=$(CUSTOM_BUILD_DATE) \
     org.cesium.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
     org.cesium.build_type=$(CUSTOM_BUILD_TYPE) \
-    org.cesium.fingerprint=$(ROM_FINGERPRINT) \
     org.cesium.build_version=$(CESIUM_VERSION)
