@@ -16,3 +16,6 @@
 
 # Inherit from our versioning
 $(call inherit-product, vendor/cesium/config/versioning.mk)
+
+# Inherit from our kernel/header generator
+$(call inherit-product, vendor/cesium/config/BoardConfigCesium.mk)
