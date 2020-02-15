@@ -1,5 +1,5 @@
 # Versioning System
-CESIUM_VERSION := v2.4.1
+CESIUM_VERSION := v2.5
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
