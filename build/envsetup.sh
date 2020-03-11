@@ -98,7 +98,7 @@ function eat()
             return 1
         fi
         echo "Waiting for device..."
-        adb wait-for-online
+        adb wait-for-device-recovery
         echo "Found device"
         if (adb shell getprop org.cesium.device | grep -q "$CUSTOM_BUILD"); then
             echo "Rebooting to sideload for install"
@@ -318,10 +318,10 @@ function installboot()
             return 1
         fi
     fi
-    adb wait-for-online
+    adb wait-for-device-recovery
     adb root
-    adb wait-for-online
-    if (adb shell getprop org.cesium.device | grep -q "$CUSTOM_BUILD");
+    adb wait-for-device-recovery
+    if (adb shell getprop org.cesium.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/boot.img /cache/
         adb shell dd if=/cache/boot.img of=$PARTITION
@@ -356,10 +356,10 @@ function installrecovery()
             return 1
         fi
     fi
-    adb wait-for-online
+    adb wait-for-device-recovery
     adb root
-    adb wait-for-online
-    if (adb shell getprop org.cesium.device | grep -q "$CUSTOM_BUILD");
+    adb wait-for-device-recovery
+    if (adb shell getprop org.cesium.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/recovery.img /cache/
         adb shell dd if=/cache/recovery.img of=$PARTITION
@@ -457,7 +457,6 @@ function dopush()
         adb connect "$TCPIPPORT"
     fi
     adb wait-for-device &> /dev/null
-    sleep 0.3
     adb remount &> /dev/null
 
     mkdir -p $OUT
