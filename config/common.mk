@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
     NavBarGesturalWideBackNoPillOverlay \
     NavBarGesturalExtraWideBackNoPillOverlay
 
+# Screen recorder
+PRODUCT_PACKAGES += \
+    Recorder
+
 # Branding
 include vendor/aosp/config/branding.mk
 
