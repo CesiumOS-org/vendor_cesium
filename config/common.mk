@@ -46,6 +46,7 @@ PRODUCT_PACKAGES += \
     DeskClock \
     Gallery
 
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -126,10 +127,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aosp/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
-# PixelSetupWizard overlay
+# CesiumWizard
 PRODUCT_PACKAGES += \
-    PixelSetupWizardOverlay \
-    PixelSetupWizardAodOverlay
+    CesiumWizard
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
