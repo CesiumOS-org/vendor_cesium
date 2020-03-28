@@ -38,6 +38,14 @@ endif
 PRODUCT_PACKAGES += \
     ConfigCenter
 
+# AOSP apps
+PRODUCT_PACKAGES += \
+    Browser \
+    MusicFX \
+    ExactCalculator \
+    DeskClock \
+    Gallery
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -125,8 +133,7 @@ PRODUCT_PACKAGES += \
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    NexusLauncherRelease
+    SystemUI
 
 # Themed bootanimation
 TARGET_MISC_BLOCK_OFFSET ?= 0
@@ -155,9 +162,6 @@ include vendor/aosp/config/branding.mk
 
 # OTA
 include vendor/aosp/config/ota.mk
-
-# GApps
-include vendor/gapps/config.mk
 
 # Cesium Style
 include vendor/cesiumstyle/config.mk
