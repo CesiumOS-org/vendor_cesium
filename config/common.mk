@@ -44,7 +44,8 @@ PRODUCT_PACKAGES += \
     MusicFX \
     ExactCalculator \
     DeskClock \
-    Gallery
+    Gallery \
+    LatinIME
 
 
 # Backup Tool
