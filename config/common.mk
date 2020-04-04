@@ -30,10 +30,6 @@ else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
-# Ambient Play
-#PRODUCT_PACKAGES += \
-#    AmbientPlayHistoryProvider
-
 # Config Center
 PRODUCT_PACKAGES += \
     ConfigCenter
@@ -44,7 +40,6 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     DeskClock \
     LatinIME
-
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
