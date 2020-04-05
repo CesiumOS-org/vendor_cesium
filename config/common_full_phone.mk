@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Dialer \
     Contacts \
-    Messaging
+    messaging
 
 # Tethering - allow without requiring a provisioning app
 # (for devices that check this)
