@@ -1,8 +1,8 @@
 # Versioning System
-CESIUM_VERSION := v2.5.2
+CESIUM_VERSION := v2.6-P1
 
 # Set all versions
-CUSTOM_BUILD_TYPE ?= UNOFFICIAL
+CUSTOM_BUILD_TYPE ?= BETA
 
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
 CUSTOM_DATE_MONTH := $(shell date -u +%m)
