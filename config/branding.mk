@@ -1,5 +1,5 @@
 # Versioning System
-CESIUM_VERSION := v2.6-P1
+CESIUM_VERSION := v2.6-P2
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= BETA
