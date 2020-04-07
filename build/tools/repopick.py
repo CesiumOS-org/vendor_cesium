@@ -182,6 +182,7 @@ if __name__ == '__main__':
     parser.add_argument('-v', '--verbose', action='store_true', help='print extra information to aid in debug')
     parser.add_argument('-f', '--force', action='store_true', help='force cherry pick even if change is closed')
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
+    parser.add_argument('-am', '--am', action='store_true', help='execute pull instead of cherry-pick')
     parser.add_argument('-P', '--path', help='use the specified path for the change')
     parser.add_argument('-t', '--topic', help='pick all commits from a specified topic')
     parser.add_argument('-Q', '--query', help='pick all commits using the specified query')
@@ -331,6 +332,7 @@ if __name__ == '__main__':
             continue
 
         mergables.append({
+            'current_revision': review['current_revision'],
             'subject': review['subject'],
             'project': review['project'],
             'branch': review['branch'],
@@ -429,7 +431,10 @@ if __name__ == '__main__':
         if args.verbose:
             print('Fetching from {0}'.format(args.gerrit))
 
-        if args.pull:
+        if args.am:
+            patch_url = '{0}/{1}/commit/{2}.patch'.format(default_github, item['project'], item['current_revision'])
+            cmd = ['curl {0} | git am --3way'.format(patch_url)]
+        elif args.pull:
             cmd = ['git pull --no-edit', item['fetch'][method]['url'], item['fetch'][method]['ref']]
         else:
             cmd = ['git fetch', item['fetch'][method]['url'], item['fetch'][method]['ref']]
@@ -443,7 +448,7 @@ if __name__ == '__main__':
             sys.exit(result)
 
         # Perform the cherry-pick
-        if not args.pull:
+        if not args.pull and not args.am:
             cmd = ['git cherry-pick --ff FETCH_HEAD']
             if args.quiet:
                 cmd_out = open(os.devnull, 'wb')
