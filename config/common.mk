@@ -34,6 +34,10 @@ endif
 PRODUCT_PACKAGES += \
     ConfigCenter
 
+# Cesium Papers
+PRODUCT_PACKAGES += \
+    CesiumPapers
+
 # AOSP apps
 PRODUCT_PACKAGES += \
     MusicFX \
