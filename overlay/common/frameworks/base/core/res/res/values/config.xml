@@ -59,4 +59,6 @@
     <!-- The name of the package that will hold the dialer role by default. -->
     <string name="config_defaultDialer">com.android.dialer</string>
 
+    <!-- Turn on dark theme by default -->
+    <integer name="config_defaultNightMode">2</integer>
 </resources>
