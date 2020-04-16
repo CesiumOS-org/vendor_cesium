@@ -13,6 +13,12 @@
 -->
 <permissions>
 
+    <privapp-permissions package="com.google.android.apps.wallpaper">
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.android.systemui">
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES" />
@@ -51,6 +57,8 @@
 
     <privapp-permissions package="com.google.android.apps.wellbeing">
         <permission name="android.permission.LOCATION_HARDWARE"/>
+        <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
     </privapp-permissions>
 
 </permissions>
