@@ -9,6 +9,6 @@ PRODUCT_PACKAGES += \
     Updates
 
 PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/org.cesium.ota.xml:system/etc/permissions/org.cesium.ota.xml
+    vendor/aosp/config/permissions/org.cesium.ota.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.cesium.ota.xml
 
 endif
