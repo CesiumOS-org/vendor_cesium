@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Copyright (C) 2020 CesuimOS Team
+# Copyright (C) 2020 CesiumOS Team
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,38 +17,31 @@
 #
 
 #  VARIABLES
-CHANGELOG=Changelog.txt
+Changelog=Changelog.txt
 
 # SCRIPT START
-[ -f $CHANGELOG ] && rm -f $CHANGELOG
+[ -f $Changelog ] && rm -f $Changelog
 
-touch $CHANGELOG
+touch $Changelog
 
 echo "Generating changelog..."
 
 for i in $(seq 14);
 do
-        b=$(expr $i - 1)
-        DATE=`date --date="$i days ago" +%Y/%m/%d`
-        UDATE=`date --date="$b days ago" +%Y/%m/%d`
+export After_Date=`date --date="$i days ago" +%Y/%m/%d`
+k=$(expr $i - 1)
+	export Until_Date=`date --date="$k days ago" +%Y/%m/%d`
 
-        echo "=======================" >> $CHANGELOG
-        echo "      "$DATE       >> $CHANGELOG
-        echo "=======================" >> $CHANGELOG
+	# Line with after --- until was too long for a small ListView
+	echo '=======================' >> $Changelog;
+	echo  "     "$Until_Date       >> $Changelog;
+	echo '=======================' >> $Changelog;
+	echo >> $Changelog;
 
-        # Cycle through every repo to find commits since $i days ago
-        repo forall -pc "git log --after=$DATE --until=$UDATE --pretty=format:\"change: %h by %an: %s\"" >> $CHANGELOG
-		
-        # New line
-        echo "" >> $CHANGELOG
+	# Cycle through every repo to find commits between 2 dates
+	repo forall -c 'cmd=$(git log --oneline --after=$After_Date --until=$Until_Date) ; repo_url=$(git config --get "remote.$(echo $REPO_REMOTE).url") ; [[ ! -z "$cmd" ]] && echo -e "* Repository: ${repo_url}/commits/${REPO_RREV}\n\n${cmd}\n"' >> $Changelog
+	echo >> $Changelog;
 done
 
-# Trim project in $CHANGELOG
-sed -i 's/project //g' $CHANGELOG
-
-# Ship to $OUT
-cp -r $CHANGELOG $OUT/system/etc/
-cp -r $CHANGELOG $OUT/
-
-# Remove $CHANGELOG
-rm -rf $CHANGELOG
+cp $Changelog $OUT/system/etc/
+cp $Changelog $OUT/
