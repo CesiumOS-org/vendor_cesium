@@ -34,13 +34,8 @@ endif
 PRODUCT_PACKAGES += \
     ConfigCenter
 
-# Cesium Papers
-PRODUCT_PACKAGES += \
-    CesiumPapers
-
 # AOSP apps
 PRODUCT_PACKAGES += \
-    MusicFX \
     ExactCalculator \
     DeskClock \
     LatinIME
@@ -132,6 +127,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aosp/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
+
+# PixelSetupWizard overlay
+PRODUCT_PACKAGES += \
+    PixelSetupWizardOverlay \
+    PixelSetupWizardAodOverlay
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
