@@ -34,6 +34,10 @@ endif
 PRODUCT_PACKAGES += \
     ConfigCenter
 
+# WallBucket
+PRODUCT_PACKAGES += \
+    WallBucket
+
 # AOSP apps
 PRODUCT_PACKAGES += \
     ExactCalculator \
