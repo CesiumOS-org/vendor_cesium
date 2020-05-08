@@ -22,7 +22,7 @@ Changelog=Changelog.txt
 # SCRIPT START
 [ -f $Changelog ] && rm -f $Changelog
 
-export formatter_script=$(realpath vendor/aosp/tools/changelog_repo_formatter.sh)
+export formatter_script=$(realpath vendor/cesium/tools/changelog_repo_formatter.sh)
 
 touch $Changelog
 

@@ -1,4 +1,4 @@
 # Inherit common CesiumOS stuff
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/cesium/config/common.mk)
 
 PRODUCT_SIZE := full
