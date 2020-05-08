@@ -15,7 +15,9 @@
 -->
 
 <permissions>
-    <privapp-permissions package="org.cesium.ota">
+    <privapp-permissions package="org.cesium.updater">
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
         <permission name="android.permission.RECOVERY"/>
         <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
         <permission name="android.permission.REBOOT"/>
