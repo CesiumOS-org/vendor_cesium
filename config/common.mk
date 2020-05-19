@@ -66,9 +66,6 @@ endif
 # Some permissions
 PRODUCT_COPY_FILES += \
     vendor/cesium/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml \
-    vendor/cesium/config/permissions/privapp-permissions-fm.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-fm.xml \
-    vendor/cesium/config/permissions/privapp-permissions-snap.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-snap.xml \
-    vendor/cesium/config/permissions/privapp-permissions-camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-camera2.xml \
     vendor/cesium/config/permissions/privapp-permissions-cesium-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-cesium-product.xml \
     vendor/cesium/config/permissions/privapp-permissions-google_prebuilt.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google_prebuilt.xml
 
