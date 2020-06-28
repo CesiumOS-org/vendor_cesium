@@ -34,6 +34,10 @@ endif
 #PRODUCT_PACKAGES += \
 #    ConfigCenter
 
+# No cutout overlay
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # WallBucket
 PRODUCT_PACKAGES += \
     WallBucket
