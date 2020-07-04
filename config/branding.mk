@@ -1,12 +1,12 @@
 # Versioning System
-CESIUM_VERSION := v2.6.1
+CESIUM_VERSION := v2.7-RC1
 
 ifneq ($(SIGNING_KEYS),)
     PRODUCT_DEFAULT_DEV_CERTIFICATE := $(SIGNING_KEYS)/releasekey
 endif
 
 # Set all versions
-CUSTOM_BUILD_TYPE ?= UNOFFICIAL
+CUSTOM_BUILD_TYPE ?= BETA
 
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
 CUSTOM_DATE_MONTH := $(shell date -u +%m)
