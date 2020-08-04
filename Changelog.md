@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.7 (2020.08.04)
+- Merge android-10.0.0_r41 - August security patch
+- Added QS custom header image
+- Fixed default apps not being set for AOSP apps
+- Updated Via Browser to v4.0.4
+- Fixed a minor workaround for battery dashboard crashing
+- Removed lockscreen battery {current, temp} into (It was returning a invalid value)
+- Fixed padding of VoLTE icon
+- Added icon shapes from Android R Beta's
+- Removed python 3.7 not allowed warning from runtime
+- Removed 'v' character from Updater's date string
+- Fixed changelog script permission issue
+
 ## v2.6.2 (2020.07.07)
 - Merge android-10.0.0_r40 - July security patch
 - Fixed some generic bugs
