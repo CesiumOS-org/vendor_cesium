@@ -5,7 +5,7 @@
 MSMNILE ?= msmnile #SM8150
 MSMSTEPPE ?= sm6150
 TRINKET ?= trinket #SM6125
-ATOLL := atoll #SM6250
+ATOLL ?= atoll #SM6250
 
 # A Family
 QCOM_BOARD_PLATFORMS += msm7x27a
