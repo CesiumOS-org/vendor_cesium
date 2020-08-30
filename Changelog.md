@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.7.1 (2020.08.30)
+- Removed redundant {hide notch, reset battery stats} code
+- Added option to configure custom header image height
+- Added support for MiSoundFX
+- Fixed size of icon of vibrate ringer mode
+- Improvements to stability and bug fixes
+- Added more custom anime header's
+
 ## v2.7 (2020.08.04)
 - Merge android-10.0.0_r41 - August security patch
 - Added QS custom header image
