@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.7.2 (2020.09.09)
+- Merge android-10.0.0_r46 - September security patch
+- Fixed disable settings dashboard suggestions option
+- Removed some unwanted header images (Ya! Don't worry anime ones are still under the hood)
+- Minor source tweaks
+
 ## v2.7.1 (2020.08.30)
 - Removed redundant {hide notch, reset battery stats} code
 - Added option to configure custom header image height
