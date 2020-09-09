@@ -30,10 +30,6 @@ else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
-# Config Center
-#PRODUCT_PACKAGES += \
-#    ConfigCenter
-
 # WallBucket
 PRODUCT_PACKAGES += \
     WallBucket
@@ -199,10 +195,7 @@ include vendor/cesium/config/branding.mk
 # OTA
 include vendor/cesium/config/ota.mk
 
-# Cesium Style
-include vendor/cesiumstyle/config.mk
-
-# Customization
-include vendor/google-customization/config.mk
+# Cesium Prebuilts
+include vendor/cesium-prebuilts/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
