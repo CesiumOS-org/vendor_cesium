@@ -30,6 +30,10 @@ else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# ThemePicker
+PRODUCT_PACKAGES += \
+    ThemePicker
+
 # WallBucket
 PRODUCT_PACKAGES += \
     WallBucket
