@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.9 (2020.10.05)
+- Bump security patch string to 2020-10-05
+- Removed fragments of AppLock
+- Improvements to fingerprint unlock speeds
+- Updated ringtones/alarm from QQ3A.200705.002
+- Fixed navbar layout switching
+- Merged generic source related fixes and upstream
+
 ## v2.7.2 (2020.09.09)
 - Merge android-10.0.0_r46 - September security patch
 - Fixed disable settings dashboard suggestions option
