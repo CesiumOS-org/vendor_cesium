@@ -160,12 +160,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BrightnessSliderOverlay
 
-# NavigationBar Gestural Mode No Pill Overlays
+# Navbar
 PRODUCT_PACKAGES += \
-    NavBarGesturalNoPillOverlay \
-    NavBarGesturalNarrowBackNoPillOverlay \
-    NavBarGesturalWideBackNoPillOverlay \
-    NavBarGesturalExtraWideBackNoPillOverlay
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium
 
 # Screen recorder
 PRODUCT_PACKAGES += \
