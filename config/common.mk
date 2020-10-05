@@ -181,7 +181,7 @@ PRODUCT_PACKAGES += \
     StitchImage
 
 # Face Unlock
-ifeq ($(CUSTOM_BUILD_TYPE), OFFICIAL)
+ifneq ($(filter OFFICIAL BETA,$(CUSTOM_BUILD_TYPE)),)
 TARGET_FACE_UNLOCK_SUPPORTED := false
 ifeq (,$(filter $(TARGET_ARCH), arm64))
 ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
