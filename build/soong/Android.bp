@@ -1,12 +1,4 @@
 bootstrap_go_package {
-    name: "soong-cesium",
-    pkgPath: "cesium/soong/android",
-    srcs: [
-        "android/variable.go",
-    ],
-}
-
-bootstrap_go_package {
     name: "soong-cesium-generator",
     pkgPath: "cesium/soong/generator",
     deps: [
