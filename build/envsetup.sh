@@ -595,3 +595,7 @@ function fixup_common_out_dir() {
         mkdir -p ${common_out_dir}
     fi
 }
+
+# Define our ROM for SmartBuild-enabled device trees
+export SMARTBUILD_RELEASE=cesium
+
