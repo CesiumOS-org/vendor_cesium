@@ -43,7 +43,7 @@ except ImportError:
 DEBUG = False
 
 custom_local_manifest = ".repo/local_manifests/cesium.xml"
-custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'ten')
+custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'eleven')
 custom_dependencies = "cesium.dependencies"
 org_manifest = "cesium-devices"  # leave empty if org is provided in manifest
 org_display = "Cesium-Devices"  # needed for displaying
