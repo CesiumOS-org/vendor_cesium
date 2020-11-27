@@ -51,4 +51,12 @@
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">2</integer>
 
+    <string-array name="config_priorityOnlyDndExemptPackages">
+        <item>com.google.android.dialer</item>
+        <item>com.android.dialer</item>
+    </string-array>
+
+    <!-- The name of the package that will hold the dialer role by default. -->
+    <string name="config_defaultDialer">com.android.dialer</string>
+
 </resources>
