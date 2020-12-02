@@ -136,10 +136,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/cesium/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/cesium/overlay/common
 
-# PixelSetupWizard overlay
-PRODUCT_PACKAGES += \
-    PixelSetupWizardOverlay \
-    PixelSetupWizardAodOverlay
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -152,13 +148,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     misc_writer \
     themed_bootanimation
-
-# Cutout control overlay
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
-
-PRODUCT_PACKAGES += \
-    BrightnessSliderOverlay
 
 # Navbar
 PRODUCT_PACKAGES += \
