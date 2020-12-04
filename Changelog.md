@@ -1,5 +1,108 @@
 # Changelog
 
+## v3.0 Beta 3 (2020.11.19)
+- Improved scrolling cache
+- Fixed inactive state wifi icon in the kai icon pack
+- Remove black bg from the power menu
+- Improvements to FOD
+- Included some additional shapes (Ya! We haven't added them just added as build target)
+- Added QuickAccessWallet plugin (Adds cards in power menu)
+- Updated some drawable
+- Removed flashlight option from global actions
+- Added Pixel offline charging animation
+- Added dark mode support for AOSP apps
+- Added SmartPixels & SmartPixel QS Tile
+- Added Aggressive battery mode
+- Added PixelLauncher as default launcher
+- Added status bar battery indicator customization
+- Added status bar clock & date customization
+- Added signature spoofing support
+- Added SystemUI restart option under advanced reboot
+- Added pocket mode feature
+- Added SystemUI restart option under advanced reboot
+- Added adaptive playback feature
+- Added configuration to specify vendor platform signatures
+- Added custom camera package
+- Added GalleryGo, Retro Music player, and Via Browser as prebuilt
+- Added selection of text in the recent apps menu
+- Added Xiaomi Orange accent
+- Remove background tint from emergency tile
+- Relax location background permission
+- Added delete action chip intent
+- Bump blur to 175x (Glass blur)
+- Switched to new soong config for Android 11
+
+## v3.0 Beta 2.5 (2020.11.03)
+- Merged android-11.0.0_r17 - November security patch
+- Added option to configure brightness slider position
+- Added option to move volume panel to left
+- Added option to hide/show QS automatic brightness slider icon
+- Added fingerprint authentication vibration controls
+- Added option to turn on/off flashlight using a long press on the power button
+- Implemented Smart Space (Cool stuff on the AOD)
+- Added double tap to wake on AOD
+- Added Ambient display tile
+- Fixed inactive Wifi Icon in Circular & Filled Icon Pack
+- Protect sensitive info on About device
+
+## v3.0 Beta 2 (2020.10.23)
+- Merged android-11.0.0_r8 - Pixel 4a(5G), Pixel 5
+- Added unlinked ringtone and notification volume
+- Added Bluetooth battery level meter on the status bar
+- Added support enforcing a minimum delay between notification sounds of an app
+- Added Always-on display QS Tile
+- Added CesiumOS Line wallpaper collection
+- Added option to enable/disable QS Panel icon tint
+- Updated boot animations for Android R Beta builds
+- Added new set of accent colors
+- Added three-fingers-swipe to screenshot
+- Enabled SystemUI Tuner
+- Added option to configure lock screen shortcuts
+- Added navbar layout inversion tuning
+- Port brightness slider changes (Automatic brightness icon and stuff)
+- Added Caffeine QS Tile
+- Added heads up QS Tile
+- Added NFC QS Tile
+- Added Sync QS Tile
+- Added DataSwitch Tile
+- Added option to configure QS column count
+- Updated webview providers from R
+- Integrate Radioactive Tweaks into Settings
+- Added option for incall vibrations
+- Added 2-button navigation bar overlay (Some people still prefer two buttons)
+- Added battery light customization
+- Configured to show current and new version on APK installation
+- Relax AVC level requirement (Fixes screen recorder on many devices)
+- Added back lock screen clock faces
+- Implemented burn-in protection for AMOLED/OLED whatever
+- Added support for exposing aux camera to apps
+- Added avatar to the Settings search bar
+- Added option to allow hiding notification headers
+- Added option to show 4G instead of LTE
+- Added Volume key music control
+- Added extended volume panel :D
+- Added option to customize the length of gesture navbar (Also, you can hide it xD)
+- Added option for enabling Lockscreen Media Art
+- Added advanced reboot and power menu customizations
+- Tons of performance enhancements and bug fixes!
+
+
+## v3.0 Beta 1 (2020.10.05)
+- Initial CesiumOS Android 11's release
+
+## v2.9 (2020.10.05)
+- Bump security patch string to 2020-10-05
+- Removed fragments of AppLock
+- Improvements to fingerprint unlock speeds
+- Updated ringtones/alarm from QQ3A.200705.002
+- Fixed navbar layout switching
+- Merged generic source related fixes and upstream
+
+## v2.7.2 (2020.09.09)
+- Merge android-10.0.0_r46 - September security patch
+- Fixed disable settings dashboard suggestions option
+- Removed some unwanted header images (Ya! Don't worry anime ones are still under the hood)
+
 ## v2.7.1 (2020.08.30)
 - Removed redundant {hide notch, reset battery stats} code
 - Added option to configure custom header image height
