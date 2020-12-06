@@ -141,14 +141,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/cesium/overlay/common
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
-# Themed bootanimation
-TARGET_MISC_BLOCK_OFFSET ?= 0
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.misc.block.offset=$(TARGET_MISC_BLOCK_OFFSET)
-PRODUCT_PACKAGES += \
-    misc_writer \
-    themed_bootanimation
-
 # Navbar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
