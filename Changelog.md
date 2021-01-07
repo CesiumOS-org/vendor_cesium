@@ -1,5 +1,23 @@
 # Changelog
 
+## v3.1.2 (2020.01.07)
+- Merged android-11.0.0_r27 - January security patch
+- Update prebuilts from redfin-user 11 RQ1A.210105.003 7005429 release-keys
+- Updated custom Camera package to 1.11.346735625
+- Updated apn configs for various carriers 
+- Added per-app cellular data, vpn and wifi restrictions 
+- Added Flipendo extreme battery saver
+- Added network meter indicator 
+- Added option to center notification headers 
+- Kill Ambient music components 
+- Improvements to aggressive battery feature
+- Improvements to PixelProps 
+- Improvements to DeskClock
+- Fixed permissions for various Gapps
+- Fixed Wellbeing & Google icons not being overlayed (Only applicable to official releases)
+- Killed maintainer info from flash script
+
+
 ## v3.1 (2020.12.08)
 - Merged android-11.0.0_r20 - December security patch
 - Update prebuilts from redfin-user 11 RQ1A.201205.010 6953398 release-keys 
