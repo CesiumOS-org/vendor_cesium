@@ -133,6 +133,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
+# IORap app launch prefetching using Perfetto traces and madvise
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.iorapd.enable=true
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/cesium/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/cesium/overlay/common
 
