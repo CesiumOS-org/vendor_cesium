@@ -1,6 +1,35 @@
 # Changelog
 
-## v3.1.2 (2020.01.07)
+## v3.3.1 (2021.05.04)
+- Merged android-11.0.0_r37 - May security patch
+- Fixed OTA Updater
+
+## v3.3 (2021.04.27)
+- Merged android-11.0.0_r35 - April security patch
+- Fixed random wake up to lock screen 
+- Fixed screen recorder on legacy devices
+- Fixed navbar on landscape mode
+- Fixed a bug in USAP pool refill logic
+- Disabled Smart Pixel pref on non supported devices
+- Added QTI BT and SBC for supported devices
+- Added ability to add/remove QS tile with one click
+- Added cutout force full-screen option
+- Added Sfuny lock screen clock 
+- Added OSS style clear all button 
+- Switched navbar home drawable with OOS
+- Dropped additions to battery saver tile
+- Moved brightness slider to the bottom 
+- Redesigned settings search bar layout 
+- Moved blur toggle to display options
+- Fixed QS tile background contrast
+- Opensourced our fresh set of app icons and settings dashboard icons :)
+- Added new collection of wallpapers
+- Use O3 for JNI
+- Improved touch width of volume panel 
+- Skip screen-on animation in all scenarios
+- Disabled advanced reboot by default
+
+## v3.1.2 (2021.01.07)
 - Merged android-11.0.0_r27 - January security patch
 - Update prebuilts from redfin-user 11 RQ1A.210105.003 7005429 release-keys
 - Updated custom Camera package to 1.11.346735625
