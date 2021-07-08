@@ -1,5 +1,5 @@
 # Safetynet
-TARGET_FORCE_BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys
+TARGET_FORCE_BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys
 
 include vendor/cesium/config/BoardConfigKernel.mk
 
