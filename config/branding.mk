@@ -1,5 +1,5 @@
 # Versioning System
-CESIUM_VERSION := v3.8
+CESIUM_VERSION := v3.9
 
 ifneq ($(SIGNING_KEYS),)
     PRODUCT_DEFAULT_DEV_CERTIFICATE := $(SIGNING_KEYS)/releasekey
