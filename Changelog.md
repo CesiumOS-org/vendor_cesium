@@ -1,5 +1,17 @@
 # Changelog
 
+## v3.9 (2021.09.24)
+- Merged android-11.0.0_r43 - Septemer security patch
+
+## v3.8 (2021.08.06)
+- Merged android-11.0.0_r40 - August security patch
+
+## v3.4 (2021.07.08)
+- Merged android-11.0.0_r39 - July security patch
+
+## v3.3.1-rc2 (2021.06.09)
+- Merged android-11.0.0_r38 - June security patch
+
 ## v3.3.1 (2021.05.04)
 - Merged android-11.0.0_r37 - May security patch
 - Fixed OTA Updater
