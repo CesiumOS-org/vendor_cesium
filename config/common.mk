@@ -19,7 +19,11 @@ $(call inherit-product, vendor/cesium/config/versioning.mk)
 
 # APNS
 PRODUCT_COPY_FILES += \
-	vendor/cesium/telephony/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+    vendor/cesium/telephony/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/cesium/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 
 # Inherit from our kernel/header generator
 $(call inherit-product, vendor/cesium/config/BoardConfigCesium.mk)
