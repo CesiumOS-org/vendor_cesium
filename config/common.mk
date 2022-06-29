@@ -17,6 +17,9 @@
 # Inherit from our versioning
 $(call inherit-product, vendor/cesium/config/versioning.mk)
 
+# Sounds
+$(call inherit-product, vendor/cesium/config/sounds.mk)
+
 # APNS
 PRODUCT_COPY_FILES += \
     vendor/cesium/telephony/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
