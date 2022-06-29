@@ -28,5 +28,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cesium/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 
+# Overlays
+PRODUCT_PACKAGES += \
+    CesiumConfigOverlay
+
 # Inherit from our kernel/header generator
 $(call inherit-product, vendor/cesium/config/BoardConfigCesium.mk)
